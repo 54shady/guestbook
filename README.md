@@ -20,7 +20,7 @@ Download source and install
 
 deactive the enviroment
 
-	(.venv)$deactive
+	(.venv)$ deactivate
 	$
 
 ## List Packages
