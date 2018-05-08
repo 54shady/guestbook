@@ -2,9 +2,9 @@
 
 ## System Requirement
 
-virtualenv package is require
+packages required
 
-    sudo pip install virtualenv
+    sudo pip install virtualenv wheel
 
 ## Project Usage
 
@@ -39,6 +39,10 @@ Package all files into tarball(guestbook-1.0.0.tar.gz)
 
 	python setup.py sdist
 
+Wheel package
+
+	python setup.py bdist_wheel
+
 Install package from tarball
 
 	pip install guestbook-1.0.0.tar.gz
@@ -53,3 +57,13 @@ Update the enviroment package if the requirement is changed
 List packages installed in current enviroment using command below
 
 	pip freeze
+
+## Requirements update
+
+Create a requirement list
+
+	(.venv)$ pip freeze > requirements.txt
+
+Using requirement file list
+
+	(.venv)$ pip install -r requirements.txt
